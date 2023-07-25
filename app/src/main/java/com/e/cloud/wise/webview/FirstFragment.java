@@ -73,7 +73,7 @@ private FragmentFirstBinding binding;
 //        webSettings.setAppCacheEnabled(true);
         String DESKTOP_USER_AGENT = "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36";
         webSettings.setUserAgentString(DESKTOP_USER_AGENT);
-        binding.webview.setWebViewClient(new WebViewClient());
+        binding.webview.setWebViewClient(new MyWebViewClient());
         binding.webview.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onPermissionRequest(final PermissionRequest request) {
