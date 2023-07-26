@@ -20,6 +20,31 @@
         android:layout_height="wrap_content"
         android:hint="Enter the web view url" />
 
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSolera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Solera URL" />
+
+        <Button
+            android:id="@+id/btnBirlesik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Birlesik payment" />
+
+    </LinearLayout>
+
     <Button
         android:id="@+id/loadUrlBtn"
         android:layout_width="200dp"

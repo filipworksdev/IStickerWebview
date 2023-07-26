@@ -34,7 +34,21 @@ private FragmentFirstBinding binding;
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        binding.etURL.setText("https://services-pat.auda-target.com/ImageCapture/1VKL7YGUK/1133");
+
+        binding.btnSolera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                binding.etURL.setText("https://services-pat.auda-target.com/ImageCapture/<image_capture_id>/<pin>");
+            }
+        });
+
+        binding.btnBirlesik.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                binding.etURL.setText("https://www.aracimicin.net/payment.upenerji/Payment/CreditCard/<user_id>");
+            }
+        });
+
         binding.loadUrlBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
